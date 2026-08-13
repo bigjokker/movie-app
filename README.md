@@ -51,11 +51,21 @@ The GitHub repo is already set up for this. Cloudflare will pull from GitHub, so
 1. Open [Workers & Pages](https://dash.cloudflare.com/?to=/:account/workers-and-pages) and sign in (create a free account if you need one).
 2. **Create** → **Pages** → **Import an existing Git repository** (or **Connect to Git**).
 3. Authorize GitHub if asked, then choose **`bigjokker/movie-app`**.
-4. Use these settings:
+4. Use these settings.
+
+   If the form asks for a **Deploy command** (`npx wrangler deploy`), you are on the Workers flow. That is fine. Use:
 
    | Setting | Value |
    | --- | --- |
-   | Project name | `movie-app` (or any name you like) |
+   | Project name | `movie-app` |
+   | Production branch | `master` |
+   | Build command | leave empty |
+   | Deploy command | `npx wrangler deploy` |
+
+   If you instead see **Pages** settings (no Deploy command), use:
+
+   | Setting | Value |
+   | --- | --- |
    | Production branch | `master` |
    | Framework preset | None |
    | Build command | `exit 0` |
