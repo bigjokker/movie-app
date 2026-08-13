@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Movies</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,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">
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #121212; color: #e0e0e0; }
+        ul { list-style-type: none; padding: 0; margin: 0; }
+        li { margin-bottom: 20px; border-bottom: 1px solid #333; padding-bottom: 10px; display: flex; align-items: flex-start; }
+        .poster { flex-shrink: 0; margin-right: 10px; width: 120px; height: 180px; cursor: pointer; }
+        .poster img { width: 100%; height: 100%; object-fit: cover; }
+        .placeholder { width: 100%; height: 100%; background-color: #333; display: flex; align-items: center; justify-content: center; font-size: 3em; color: #666; font-weight: bold; }
+        .middle { flex: 1; margin-right: 10px; max-width: 500px; }
+        .right-side { flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+        h1, h3 { color: #ffffff; }
+        h3 { margin-bottom: 4px; font-size: 1.1em; cursor: pointer; }
+        .watch-on {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin: 0 0 8px;
+        }
+        .watch-badge {
+            display: inline-block;
+            font-size: 0.72em;
+            line-height: 1.2;
+            padding: 2px 6px;
+            border-radius: 3px;
+            background: #2a2a2a;
+            border: 1px solid #444;
+            color: #ccc;
+            white-space: nowrap;
+        }
+        .watch-badge.netflix { background: #3a1010; border-color: #8a1c1c; color: #f2b4b4; }
+        .watch-badge.prime { background: #0a2830; border-color: #1a6a82; color: #9bd6ea; }
+        .watch-badge.disney { background: #10183a; border-color: #2a48a0; color: #b7c6f5; }
+        .watch-badge.hulu { background: #0d2a1a; border-color: #1a7a48; color: #9ee0bc; }
+        .watch-badge.max { background: #10143a; border-color: #2a3aa0; color: #b8c0f5; }
+        .watch-badge.apple { background: #222; border-color: #666; color: #ddd; }
+        .watch-badge.paramount { background: #0a2038; border-color: #1a5a9a; color: #9ec4ea; }
+        .watch-badge.peacock { background: #2e2610; border-color: #8a7020; color: #ead090; }
+        p { margin-top: 0; }
+        .rating { font-weight: bold; margin-top: 5px; color: #ffffff; font-size: 0.9em; text-align: right; }
+        .overview { color: #d0d0d0; position: relative; cursor: pointer; }
+        button { background-color: #333; color: #e0e0e0; border: 1px solid #444; padding: 5px 10px; cursor: pointer; margin-left: 5px; }
+        button:hover { background-color: #444; }
+        #errorBox { background: #300; color: #f88; padding: 10px; margin-bottom: 10px; border: 1px solid #600; display: none; }
+        #header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+        #headerButtons { display: flex; gap: 5px; flex-wrap: wrap; }
+        #headerTitle {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 0.67em 0;
+            font-size: 1.8em;
+        }
+        #headerPrefix { white-space: nowrap; }
+        #sortSelect {
+            font: inherit;
+            font-weight: 700;
+            color: #ffffff;
+            background-color: #1c1c1c;
+            border: 1px solid #555;
+            border-radius: 6px;
+            padding: 4px 8px;
+            cursor: pointer;
+            max-width: 100%;
+        }
+        #sortSelect:hover,
+        #sortSelect:focus {
+            border-color: #888;
+            outline: none;
+        }
+        #sortSelect option {
+            background-color: #1c1c1c;
+            color: #ffffff;
+        }
+        #backToTop {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #444;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+            z-index: 100;
+            border-radius: 4px;
+        }
+        #backToTop:hover { background-color: #555; }
+        #authStatus { color: #f88; min-height: 1.2em; }
+        /* Trailer Modal */
+        #trailerModal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(0, 0, 0, 0.85);
+            z-index: 200;
+            justify-content: center;
+            align-items: center;
+        }
+        #trailerModal .modal-content {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 90vw;
+            max-height: 90vh;
+            width: 100%;
+            position: relative;
+            overflow: auto;
+        }
+        #trailerModal iframe {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border: none;
+        }
+        #trailerModal .close-btn,
+        #filtersModal .close-btn,
+        #loginModal .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #444;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 4px;
+            line-height: 1;
+        }
+        #trailerModal .close-btn:hover,
+        #filtersModal .close-btn:hover,
+        #loginModal .close-btn:hover { background-color: #555; }
+        /* Filters Modal */
+        #filtersModal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(0, 0, 0, 0.85);
+            z-index: 150;
+            justify-content: center;
+            align-items: center;
+        }
+        #filtersModal .modal-content {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 90vw;
+            max-height: 90vh;
+            width: 100%;
+            overflow-y: auto;
+            position: relative;
+        }
+        #filtersModal button:not(.close-btn) {
+            width: var(--button-width, 100px);
+            height: var(--button-height, 40px);
+            font-size: var(--button-font-size, 16px);
+        }
+        #filtersModal #buttonContainer {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        #filtersModal #filtersContainer {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        #filtersModal #genresContainer,
+        #filtersModal #moodsContainer { width: 48%; }
+        #filtersModal #searchContainer {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            margin-top: 16px;
+        }
+        #filtersModal #searchContainer > div { width: 48%; }
+        #filtersModal #bottomContainer {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            margin-top: 20px;
+        }
+        #filtersModal #bottomContainer > div { width: 48%; }
+        #filtersModal label { display: block; margin: 4px 0; }
+        #streamingContainer { margin-top: 16px; }
+        #streamingList {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4px 16px;
+        }
+        #streamingContainer label { display: flex; align-items: center; gap: 8px; }
+        #loginModal,
+        #apiKeyModal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(0, 0, 0, 0.85);
+            z-index: 180;
+            justify-content: center;
+            align-items: center;
+        }
+        #loginModal .modal-content,
+        #apiKeyModal .modal-content {
+            background-color: #222;
+            padding: 24px;
+            border-radius: 8px;
+            max-width: 360px;
+            width: 90vw;
+            position: relative;
+        }
+        #loginModal h3,
+        #apiKeyModal h3 { margin-top: 0; }
+        #loginModal .login-hint,
+        #apiKeyModal .login-hint {
+            color: #aaa;
+            font-size: 0.85em;
+            margin: 0 0 12px;
+        }
+        #loginModal label,
+        #apiKeyModal label { display: block; margin: 12px 0 4px; }
+        #loginModal input[type="text"],
+        #loginModal input[type="password"],
+        #apiKeyModal input[type="text"],
+        #apiKeyModal input[type="password"] {
+            font-size: 16px;
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            background: #333;
+            border: 1px solid #555;
+            color: #e0e0e0;
+            border-radius: 4px;
+        }
+        #loginModal .login-error,
+        #apiKeyModal .login-error {
+            color: #f88;
+            min-height: 1.2em;
+            margin: 10px 0 0;
+        }
+        #loginModal .login-actions,
+        #apiKeyModal .login-actions {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 16px;
+        }
+        #apiKeyModal a { color: #9bd6ea; }
+        #filtersModal input[type="text"],
+        #filtersModal input[type="number"] {
+            font-size: 15px;
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            background: #333;
+            border: 1px solid #555;
+            color: #e0e0e0;
+            border-radius: 4px;
+        }
+        #filtersModal .year-input {
+            width: 80px;
+            padding: 8px;
+            font-size: 16px;
+            height: auto;
+            box-sizing: border-box;
+        }
+        #filtersModal .year-input::-webkit-inner-spin-button,
+        #filtersModal .year-input::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        #filtersModal .year-input {
+            -moz-appearance: textfield;
+        }
+        @media (max-width: 600px) {
+            #trailerModal .modal-content,
+            #filtersModal .modal-content,
+            #loginModal .modal-content,
+            #apiKeyModal .modal-content { padding: 12px; }
+            #trailerModal .close-btn,
+            #filtersModal .close-btn,
+            #loginModal .close-btn { padding: 8px 12px; font-size: 16px; }
+            #filtersModal #filtersContainer,
+            #filtersModal #searchContainer,
+            #filtersModal #bottomContainer {
+                flex-direction: column;
+            }
+            #filtersModal #genresContainer,
+            #filtersModal #moodsContainer,
+            #filtersModal #searchContainer > div,
+            #filtersModal #bottomContainer > div {
+                width: 100%;
+            }
+            #streamingList { grid-template-columns: 1fr; }
+            li { flex-direction: column; }
+            .poster { margin-bottom: 10px; }
+            .right-side { align-items: flex-start; flex-direction: row; flex-wrap: wrap; }
+            #headerTitle { font-size: 1.35em; }
+        }
+    </style>
+</head>
+<body>
+    <p id="authStatus"></p>
+    <div id="header">
+        <h1 id="headerTitle">
+            <span id="headerPrefix">Movies by</span>
+            <select id="sortSelect" aria-label="Sort movies">
+                <option value="popular">Popular</option>
+                <option value="top">Top rated</option>
+                <option value="newest">Newest</option>
+                <option value="gems">Hidden gems</option>
+            </select>
+        </h1>
+        <div id="headerButtons">
+            <button id="loginBtn" style="display: none;">Login to TMDB</button>
+            <button id="filtersBtn">Filters</button>
+            <button id="clearBtn">Clear</button>
+            <button id="undoBtn">Undo Skip</button>
+        </div>
+    </div>
+    <div id="errorBox"></div>
+    <div id="movieList"><p>Loading...</p></div>
+    <button id="backToTop">↑</button>
+
+    <div id="trailerModal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()">×</button>
+            <iframe id="trailerIframe" src="" title="Movie Trailer"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+    </div>
+
+    <div id="filtersModal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeFiltersModal(false)">×</button>
+            <div id="filtersContainer">
+                <div id="genresContainer"><h3>Genres tags</h3></div>
+                <div id="moodsContainer"><h3>Moods tags</h3></div>
+            </div>
+            <div id="searchContainer">
+                <div>
+                    <h3>Movie Search</h3>
+                    <input type="text" id="searchInput" placeholder="Search Movies...">
+                </div>
+                <div>
+                    <h3>Mood Search</h3>
+                    <input type="text" id="moodInput" placeholder="Mood Keywords...">
+                </div>
+            </div>
+            <div id="bottomContainer">
+                <div>
+                    <h3>Actor Search</h3>
+                    <input type="text" id="actorInput" placeholder="Actor Names...">
+                </div>
+                <div>
+                    <h3>Year Range</h3>
+                    <input type="number" id="minYear" class="year-input" placeholder="Min" min="1900" max="2100">
+                    <input type="number" id="maxYear" class="year-input" placeholder="Max" min="1900" max="2100">
+                </div>
+            </div>
+            <div id="streamingContainer">
+                <h3>Streaming</h3>
+                <div id="streamingList"></div>
+            </div>
+            <div id="buttonContainer">
+                <button id="applyFilters">Apply</button>
+                <button id="cancelFilters">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="loginModal">
+        <div class="modal-content">
+            <button class="close-btn" type="button" onclick="closeLoginModal()">×</button>
+            <h3>Sign in to TMDB</h3>
+            <p class="login-hint">Use your TMDB username and password. They are sent only to themoviedb.org and are not saved here.</p>
+            <form id="loginForm">
+                <label for="tmdbUsername">Username</label>
+                <input type="text" id="tmdbUsername" name="username" autocomplete="username" required>
+                <label for="tmdbPassword">Password</label>
+                <input type="password" id="tmdbPassword" name="password" autocomplete="current-password" required>
+                <p id="loginError" class="login-error"></p>
+                <div class="login-actions">
+                    <button type="submit" id="loginSubmitBtn">Sign in</button>
+                    <button type="button" id="loginCancelBtn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="apiKeyModal">
+        <div class="modal-content">
+            <h3>TMDB API key</h3>
+            <p class="login-hint">This app needs your own TMDB API key. Get a free one at <a href="https://www.themoviedb.org/settings/api" target="_blank" rel="noopener">themoviedb.org/settings/api</a>. The key stays in this browser and is not uploaded to GitHub.</p>
+            <form id="apiKeyForm">
+                <label for="apiKeyInput">API key</label>
+                <input type="password" id="apiKeyInput" name="apiKey" autocomplete="off" required>
+                <p id="apiKeyError" class="login-error"></p>
+                <div class="login-actions">
+                    <button type="submit" id="apiKeySaveBtn">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script>
+        // ====================== CONFIG ======================
+        function resolveApiKey() {
+            const fromFile = (typeof window.TMDB_API_KEY === 'string') ? window.TMDB_API_KEY.trim() : '';
+            if (fromFile && fromFile !== 'YOUR_TMDB_API_KEY') return fromFile;
+            return (localStorage.getItem('tmdb_api_key') || '').trim();
+        }
+
+        let apiKey = resolveApiKey();
+        const WATCH_REGION = 'US';
+        const streamingServices = [
+            { id: 'netflix', name: 'Netflix', shortName: 'Netflix', providerIds: [8, 1796] },
+            { id: 'prime', name: 'Amazon Prime', shortName: 'Prime', providerIds: [9, 613, 2100] },
+            { id: 'disney', name: 'Disney+', shortName: 'Disney+', providerIds: [337] },
+            { id: 'hulu', name: 'Hulu', shortName: 'Hulu', providerIds: [15] },
+            { id: 'max', name: 'Max', shortName: 'Max', providerIds: [1899] },
+            { id: 'apple', name: 'Apple TV+', shortName: 'Apple TV+', providerIds: [350] },
+            { id: 'paramount', name: 'Paramount+', shortName: 'Paramount+', providerIds: [2303, 2616] },
+            { id: 'peacock', name: 'Peacock', shortName: 'Peacock', providerIds: [386, 387] }
+        ];
+        const SORT_OPTIONS = {
+            popular: { label: 'Popular' },
+            top: { label: 'Top rated' },
+            newest: { label: 'Newest' },
+            gems: { label: 'Hidden gems' }
+        };
+
+        // ====================== STATE ======================
+        let seen = new Set();
+        let excluded = new Set();
+        let favorites = new Set();
+        let sortedFavorites = [];
+        let selectedGenres = readJson('selectedGenres', []);
+        let selectedMoods = readJson('selectedMoods', []);
+        let searchQuery = localStorage.getItem('searchQuery') || '';
+        let actorQuery = localStorage.getItem('actorQuery') || '';
+        let minYear = localStorage.getItem('minYear') || '';
+        let maxYear = localStorage.getItem('maxYear') || '';
+        let moodKeywordQuery = localStorage.getItem('moodKeywordQuery') || '';
+        let selectedStreaming = loadSelectedStreaming();
+        let currentSort = loadCurrentSort();
+        const watchProviderCache = new Map();
+        const watchProviderInflight = new Map();
+
+        function readJson(key, fallback) {
+            try {
+                const raw = localStorage.getItem(key);
+                if (raw == null || raw === '') return fallback;
+                return JSON.parse(raw);
+            } catch (e) {
+                return fallback;
+            }
+        }
+
+        function loadSelectedStreaming() {
+            const parsed = readJson('selectedStreaming', null);
+            if (Array.isArray(parsed)) {
+                const valid = new Set(streamingServices.map(s => s.id));
+                return parsed.filter(id => valid.has(id));
+            }
+            if (localStorage.getItem('amazonPrimeOnly') === 'true') return ['prime'];
+            return [];
+        }
+
+        function selectedProviderIds() {
+            return streamingServices
+                .filter(service => selectedStreaming.includes(service.id))
+                .flatMap(service => service.providerIds);
+        }
+
+        function loadCurrentSort() {
+            const saved = localStorage.getItem('movieSort');
+            return (saved && SORT_OPTIONS[saved]) ? saved : 'popular';
+        }
+
+        function isoDate(d) {
+            const month = String(d.getMonth() + 1).padStart(2, '0');
+            const day = String(d.getDate()).padStart(2, '0');
+            return `${d.getFullYear()}-${month}-${day}`;
+        }
+
+        function todayISODate() {
+            return isoDate(new Date());
+        }
+
+        function oneYearAgoISODate() {
+            const d = new Date();
+            d.setFullYear(d.getFullYear() - 1);
+            return isoDate(d);
+        }
+
+        function sortQueryParams() {
+            if (currentSort === 'top') return '&sort_by=vote_average.desc&vote_count.gte=200';
+            if (currentSort === 'newest') {
+                const upcomingCap = maxYear ? '' : `&primary_release_date.lte=${todayISODate()}`;
+                return `&sort_by=primary_release_date.desc&vote_count.gte=50${upcomingCap}`;
+            }
+            if (currentSort === 'gems') {
+                const agedCap = minYear ? '' : `&primary_release_date.lte=${oneYearAgoISODate()}`;
+                return `&sort_by=vote_average.desc&vote_count.gte=400&vote_count.lte=3000&vote_average.gte=7${agedCap}`;
+            }
+            return '&sort_by=popularity.desc';
+        }
+
+        function compareMovies(a, b) {
+            if (currentSort === 'newest') {
+                return (b.release_date || '').localeCompare(a.release_date || '');
+            }
+            if (currentSort === 'top' || currentSort === 'gems') {
+                if ((b.vote_average || 0) !== (a.vote_average || 0)) {
+                    return (b.vote_average || 0) - (a.vote_average || 0);
+                }
+                return (b.vote_count || 0) - (a.vote_count || 0);
+            }
+            return (b.popularity || 0) - (a.popularity || 0);
+        }
+
+        if (!Array.isArray(selectedGenres)) selectedGenres = [];
+        if (!Array.isArray(selectedMoods)) selectedMoods = [];
+        let appPage = 1;
+        let currentPage = 1;
+        let maxPages = 0;
+        const moviesPerPage = 20;
+        let isLoading = false;
+        let loadGeneration = 0;
+        let reachedEnd = false;
+        let favSortToken = 0;
+        let lastSkippedId = null;
+        let sessionId = localStorage.getItem('tmdb_session_id');
+        let accountId = localStorage.getItem('tmdb_account_id');
+        let skippedListId = null;
+        let originalListHTML = null;
+        let originalScrollPos = 0;
+        let selectedMovieId = null;
+        let isInRecommendations = false;
+        let recsGeneration = 0;
+
+        // ====================== DOM ======================
+        const movieList = document.getElementById('movieList');
+        const errorBox = document.getElementById('errorBox');
+        const undoBtn = document.getElementById('undoBtn');
+        const backToTop = document.getElementById('backToTop');
+        const authStatus = document.getElementById('authStatus');
+        const loginBtn = document.getElementById('loginBtn');
+        const trailerModal = document.getElementById('trailerModal');
+        const trailerIframe = document.getElementById('trailerIframe');
+        const filtersModal = document.getElementById('filtersModal');
+        const filtersBtn = document.getElementById('filtersBtn');
+        const headerPrefix = document.getElementById('headerPrefix');
+        const sortSelect = document.getElementById('sortSelect');
+        const loginModal = document.getElementById('loginModal');
+        const loginForm = document.getElementById('loginForm');
+        const loginError = document.getElementById('loginError');
+        const loginSubmitBtn = document.getElementById('loginSubmitBtn');
+        const tmdbUsername = document.getElementById('tmdbUsername');
+        const tmdbPassword = document.getElementById('tmdbPassword');
+
+        // ====================== DATA ======================
+        const genres = [
+            {id: 28, name: 'Action'}, {id: 16, name: 'Animation'}, {id: 35, name: 'Comedy'},
+            {id: 80, name: 'Crime'}, {id: 18, name: 'Drama'}, {id: 14, name: 'Fantasy'},
+            {id: 27, name: 'Horror'}, {id: 10749, name: 'Romance'}, {id: 878, name: 'Science Fiction'},
+            {id: 53, name: 'Thriller'}
+        ];
+        const moods = [
+            {id: 9715, name: 'Thrilling'}, {id: 240, name: 'Underdog'}, {id: 10123, name: 'Dark Comedy'},
+            {id: 9964, name: 'Crude-Humor'}, {id: 9673, name: 'Heartwarming'}, {id: 9826, name: 'Murder'},
+            {id: 156597, name: 'Magic-Realism'}, {id: 12565, name: 'Psychological-Thriller'},
+            {id: 6075, name: 'Sports'}, {id: 1566, name: 'Dreams'}
+        ];
+
+        // ====================== HELPERS ======================
+        function escapeHtml(text) {
+            if (!text) return '';
+            return String(text)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#039;');
+        }
+
+        function showError(msg) {
+            console.error('Error:', msg);
+            errorBox.textContent = msg;
+            errorBox.style.display = 'block';
+        }
+
+        function updateHeaderTitle() {
+            if (!headerPrefix) return;
+            if (selectedStreaming.length === 1) {
+                const service = streamingServices.find(s => s.id === selectedStreaming[0]);
+                headerPrefix.textContent = service ? `${service.name} ·` : 'Streaming ·';
+            } else if (selectedStreaming.length > 1) {
+                headerPrefix.textContent = 'Streaming ·';
+            } else {
+                headerPrefix.textContent = 'Movies by';
+            }
+            if (sortSelect && sortSelect.value !== currentSort) {
+                sortSelect.value = currentSort;
+            }
+        }
+
+        async function getMovieProviderIds(movieId) {
+            const key = String(movieId);
+            if (watchProviderCache.has(key)) return watchProviderCache.get(key);
+            if (watchProviderInflight.has(key)) return watchProviderInflight.get(key);
+
+            const pending = (async () => {
+                try {
+                    const response = await fetch(`https://api.themoviedb.org/3/movie/${key}/watch/providers?api_key=${apiKey}`);
+                    if (!response.ok) return new Set();
+                    const data = await response.json();
+                    if (data.status_code) return new Set();
+                    const us = data.results && data.results[WATCH_REGION];
+                    const lists = []
+                        .concat((us && us.flatrate) || [])
+                        .concat((us && us.ads) || []);
+                    const ids = new Set(lists.map(p => p.provider_id));
+                    watchProviderCache.set(key, ids);
+                    return ids;
+                } catch (err) {
+                    console.error('Watch provider error:', err);
+                    return new Set();
+                } finally {
+                    watchProviderInflight.delete(key);
+                }
+            })();
+
+            watchProviderInflight.set(key, pending);
+            return pending;
+        }
+
+        async function isOnSelectedStreaming(movieId) {
+            const wanted = selectedProviderIds();
+            if (!wanted.length) return true;
+            const have = await getMovieProviderIds(movieId);
+            return wanted.some(id => have.has(id));
+        }
+
+        async function filterStreamingMovies(movies) {
+            if (!selectedStreaming.length || !movies.length) return movies;
+            const checks = await Promise.all(movies.map(async movie => ({
+                movie,
+                match: await isOnSelectedStreaming(movie.id)
+            })));
+            return checks.filter(item => item.match).map(item => item.movie);
+        }
+
+        function servicesForProviders(providerIds) {
+            return streamingServices.filter(service =>
+                service.providerIds.some(id => providerIds.has(id))
+            );
+        }
+
+        function renderWatchBadges(slot, providerIds) {
+            const matches = servicesForProviders(providerIds);
+            slot.innerHTML = matches.map(service =>
+                `<span class="watch-badge ${service.id}">${escapeHtml(service.shortName)}</span>`
+            ).join('');
+            slot.dataset.loaded = '1';
+        }
+
+        async function fillWatchBadges(root = document) {
+            const slots = [...root.querySelectorAll('.watch-on')].filter(slot => slot.dataset.loaded !== '1');
+            await Promise.all(slots.map(async slot => {
+                const key = String(slot.dataset.movieId);
+                if (watchProviderCache.has(key)) {
+                    renderWatchBadges(slot, watchProviderCache.get(key));
+                    return;
+                }
+                const providerIds = await getMovieProviderIds(key);
+                if (!slot.isConnected) return;
+                renderWatchBadges(slot, providerIds);
+            }));
+        }
+
+        function closeModal() {
+            trailerModal.style.display = 'none';
+            trailerIframe.src = '';
+        }
+
+        function closeFiltersModal(apply) {
+            if (apply) {
+                selectedGenres = [];
+                filtersModal.querySelectorAll('#genresContainer input:checked').forEach(cb => {
+                    selectedGenres.push(parseInt(cb.value));
+                });
+                selectedMoods = [];
+                filtersModal.querySelectorAll('#moodsContainer input:checked').forEach(cb => {
+                    selectedMoods.push(parseInt(cb.value));
+                });
+                localStorage.setItem('selectedGenres', JSON.stringify(selectedGenres));
+                localStorage.setItem('selectedMoods', JSON.stringify(selectedMoods));
+
+                searchQuery = filtersModal.querySelector('#searchInput').value.trim();
+                localStorage.setItem('searchQuery', searchQuery);
+                moodKeywordQuery = filtersModal.querySelector('#moodInput').value.trim();
+                localStorage.setItem('moodKeywordQuery', moodKeywordQuery);
+                actorQuery = filtersModal.querySelector('#actorInput').value.trim();
+                localStorage.setItem('actorQuery', actorQuery);
+                minYear = filtersModal.querySelector('#minYear').value;
+                localStorage.setItem('minYear', minYear);
+                maxYear = filtersModal.querySelector('#maxYear').value;
+                localStorage.setItem('maxYear', maxYear);
+                selectedStreaming = [];
+                filtersModal.querySelectorAll('#streamingList input:checked').forEach(cb => {
+                    selectedStreaming.push(cb.value);
+                });
+                localStorage.setItem('selectedStreaming', JSON.stringify(selectedStreaming));
+                localStorage.removeItem('amazonPrimeOnly');
+                updateHeaderTitle();
+                resetListPaging();
+                movieList.innerHTML = '';
+                loadMovies();
+            }
+            filtersModal.style.display = 'none';
+        }
+
+        function openFiltersModal() {
+            filtersModal.style.display = 'flex';
+            filtersModal.querySelector('#searchInput').value = searchQuery;
+            filtersModal.querySelector('#moodInput').value = moodKeywordQuery;
+            filtersModal.querySelector('#actorInput').value = actorQuery;
+            filtersModal.querySelector('#minYear').value = minYear;
+            filtersModal.querySelector('#maxYear').value = maxYear;
+            filtersModal.querySelectorAll('#streamingList input').forEach(cb => {
+                cb.checked = selectedStreaming.includes(cb.value);
+            });
+
+            filtersModal.querySelectorAll('#genresContainer input').forEach(cb => {
+                cb.checked = selectedGenres.includes(parseInt(cb.value));
+            });
+            filtersModal.querySelectorAll('#moodsContainer input').forEach(cb => {
+                cb.checked = selectedMoods.includes(parseInt(cb.value));
+            });
+        }
+
+        function showFilters() {
+            const genresContainer = filtersModal.querySelector('#genresContainer');
+            genresContainer.innerHTML = '<h3>Genres tags</h3>';
+            genres.forEach(genre => {
+                const label = document.createElement('label');
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.value = genre.id;
+                label.appendChild(checkbox);
+                label.appendChild(document.createTextNode(' ' + genre.name));
+                genresContainer.appendChild(label);
+            });
+
+            const moodsContainer = filtersModal.querySelector('#moodsContainer');
+            moodsContainer.innerHTML = '<h3>Moods tags</h3>';
+            moods.forEach(mood => {
+                const label = document.createElement('label');
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.value = mood.id;
+                label.appendChild(checkbox);
+                label.appendChild(document.createTextNode(' ' + mood.name));
+                moodsContainer.appendChild(label);
+            });
+
+            const streamingList = filtersModal.querySelector('#streamingList');
+            streamingList.innerHTML = '';
+            streamingServices.forEach(service => {
+                const label = document.createElement('label');
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.value = service.id;
+                label.appendChild(checkbox);
+                label.appendChild(document.createTextNode(' ' + service.name));
+                streamingList.appendChild(label);
+            });
+
+            openFiltersModal();
+        }
+
+        // ====================== MOVIE CARD (single source of truth) ======================
+        function createMovieCardHTML(movie) {
+            const posterUrl = movie.poster_path ? `https://image.tmdb.org/t/p/w154${movie.poster_path}` : '';
+            const isFavorite = favorites.has(movie.id);
+            const releaseYear = movie.release_date ? movie.release_date.substring(0, 4) : 'N/A';
+            const rating = movie.vote_average ? movie.vote_average.toFixed(1) : 'N/A';
+            const title = escapeHtml(movie.title || 'Unknown');
+            const overview = escapeHtml(movie.overview || 'No overview available.');
+
+            return `
+                <li data-movie-id="${movie.id}">
+                    <div class="poster" data-movie-id="${movie.id}">
+                        ${posterUrl
+                            ? `<img src="${posterUrl}" alt="${title} poster" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\'placeholder\\'>?</div>'">`
+                            : '<div class="placeholder">?</div>'}
+                    </div>
+                    <div class="middle">
+                        <h3>${title} (${releaseYear})</h3>
+                        <div class="watch-on" data-movie-id="${movie.id}"></div>
+                        <p class="overview">${overview}</p>
+                    </div>
+                    <div class="right-side">
+                        ${!isFavorite ? `<button class="exclude-btn" onclick="excludeMovie(${movie.id}, this.closest('li'))">Seen/Skip</button>` : ''}
+                        <p class="rating">Rating: ${rating}</p>
+                        <button class="favorite-btn" onclick="toggleFavorite(${movie.id}, this)" style="background:none;border:none;font-size:1.5em;color:${isFavorite ? 'red' : 'white'};cursor:pointer;">
+                            ${isFavorite ? '♥' : '♡'}
+                        </button>
+                    </div>
+                </li>
+            `;
+        }
+
+        // ====================== TMDB HELPERS ======================
+        async function fetchTrailer(movieId) {
+            try {
+                const response = await fetch(`https://api.themoviedb.org/3/movie/${movieId}/videos?api_key=${apiKey}&language=en-US`);
+                const data = await response.json();
+                if (data.status_code || !data.results) return null;
+
+                // Prefer official trailers, then any trailer/teaser
+                let trailer = data.results.find(v =>
+                    v.site === 'YouTube' && v.type === 'Trailer' && v.official
+                );
+                if (!trailer) {
+                    trailer = data.results.find(v =>
+                        v.site === 'YouTube' && (v.type === 'Trailer' || v.type === 'Teaser')
+                    );
+                }
+                if (!trailer) return null;
+
+                // More complete embed parameters help avoid YouTube Error 153
+                const params = new URLSearchParams({
+                    autoplay: '1',
+                    rel: '0',
+                    modestbranding: '1',
+                    playsinline: '1',
+                    enablejsapi: '1'
+                });
+                return `https://www.youtube.com/embed/${trailer.key}?${params.toString()}`;
+            } catch (err) {
+                console.error('Trailer fetch error:', err);
+                return null;
+            }
+        }
+
+        async function openTrailerModal(movieId) {
+            const url = await fetchTrailer(movieId);
+            if (url) {
+                trailerIframe.src = url;
+                trailerModal.style.display = 'flex';
+            } else {
+                showError('No trailer found for this movie.');
+            }
+        }
+
+        async function getMovieDetails(id) {
+            try {
+                const response = await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`);
+                const data = await response.json();
+                if (data.status_code) return null;
+                return data;
+            } catch (err) {
+                console.error('getMovieDetails error:', err);
+                return null;
+            }
+        }
+
+        // ====================== LISTS / AUTH ======================
+        function askForApiKey() {
+            const modal = document.getElementById('apiKeyModal');
+            const form = document.getElementById('apiKeyForm');
+            const input = document.getElementById('apiKeyInput');
+            const err = document.getElementById('apiKeyError');
+            const saveBtn = document.getElementById('apiKeySaveBtn');
+            modal.style.display = 'flex';
+            input.value = '';
+            err.textContent = '';
+            input.focus();
+
+            return new Promise((resolve) => {
+                form.onsubmit = async (e) => {
+                    e.preventDefault();
+                    const value = input.value.trim();
+                    if (!value) {
+                        err.textContent = 'Paste your TMDB API key.';
+                        return;
+                    }
+                    saveBtn.disabled = true;
+                    saveBtn.textContent = 'Checking...';
+                    err.textContent = '';
+                    try {
+                        const res = await fetch(`https://api.themoviedb.org/3/configuration?api_key=${encodeURIComponent(value)}`);
+                        const data = await res.json();
+                        if (!res.ok || data.status_code) {
+                            throw new Error(data.status_message || 'That key did not work.');
+                        }
+                        localStorage.setItem('tmdb_api_key', value);
+                        apiKey = value;
+                        modal.style.display = 'none';
+                        input.value = '';
+                        resolve();
+                    } catch (ex) {
+                        err.textContent = ex.message || 'Could not verify that key.';
+                    } finally {
+                        saveBtn.disabled = false;
+                        saveBtn.textContent = 'Save';
+                    }
+                };
+            });
+        }
+
+        function openLoginModal() {
+            loginError.textContent = '';
+            tmdbPassword.value = '';
+            loginModal.style.display = 'flex';
+            tmdbUsername.focus();
+        }
+
+        function closeLoginModal() {
+            loginModal.style.display = 'none';
+            tmdbPassword.value = '';
+            loginError.textContent = '';
+            loginSubmitBtn.disabled = false;
+            loginSubmitBtn.textContent = 'Sign in';
+        }
+
+        function clearLoginState() {
+            localStorage.removeItem('tmdb_session_id');
+            localStorage.removeItem('tmdb_account_id');
+            sessionId = null;
+            accountId = null;
+            skippedListId = null;
+            loginBtn.style.display = 'block';
+        }
+
+        async function finishLogin(newSessionId) {
+            sessionId = newSessionId;
+            localStorage.setItem('tmdb_session_id', sessionId);
+
+            const accountRes = await fetch(`https://api.themoviedb.org/3/account?api_key=${apiKey}&session_id=${sessionId}`);
+            const accountData = await accountRes.json();
+            if (accountData.status_code || !accountData.id) {
+                throw new Error(accountData.status_message || 'Failed to fetch account');
+            }
+
+            localStorage.setItem('tmdb_account_id', accountData.id);
+            accountId = accountData.id;
+            authStatus.textContent = 'Logged in – favorites & skipped list synced.';
+            loginBtn.style.display = 'none';
+
+            skippedListId = await getOrCreateSkippedList();
+            await loadExcluded();
+            await loadFavorites();
+        }
+
+        async function loginWithPassword(username, password) {
+            const tokenRes = await fetch(`https://api.themoviedb.org/3/authentication/token/new?api_key=${apiKey}`);
+            const tokenData = await tokenRes.json();
+            if (!tokenData.success || !tokenData.request_token) {
+                throw new Error(tokenData.status_message || 'Failed to start login');
+            }
+
+            const validateRes = await fetch(`https://api.themoviedb.org/3/authentication/token/validate_with_login?api_key=${apiKey}`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    username: username,
+                    password: password,
+                    request_token: tokenData.request_token
+                })
+            });
+            const validateData = await validateRes.json();
+            if (!validateData.success) {
+                throw new Error(validateData.status_message || 'Invalid username or password');
+            }
+
+            const sessionRes = await fetch(`https://api.themoviedb.org/3/authentication/session/new?api_key=${apiKey}`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ request_token: validateData.request_token })
+            });
+            const sessionData = await sessionRes.json();
+            if (!sessionData.success || !sessionData.session_id) {
+                throw new Error(sessionData.status_message || 'Failed to create session');
+            }
+
+            await finishLogin(sessionData.session_id);
+        }
+
+        async function getOrCreateSkippedList() {
+            if (!accountId || !sessionId) return null;
+            try {
+                let page = 1;
+                while (true) {
+                    const listsRes = await fetch(`https://api.themoviedb.org/3/account/${accountId}/lists?api_key=${apiKey}&session_id=${sessionId}&page=${page}`);
+                    const listsData = await listsRes.json();
+                    if (listsData.status_code) throw new Error(listsData.status_message || 'Failed to fetch lists');
+                    const found = (listsData.results || []).find(l => l.name === 'Seen/Skipped');
+                    if (found) return found.id;
+                    if (page >= listsData.total_pages) break;
+                    page++;
+                }
+                const createRes = await fetch(`https://api.themoviedb.org/3/list?api_key=${apiKey}&session_id=${sessionId}`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ name: 'Seen/Skipped', description: 'Movies seen or skipped', language: 'en' })
+                });
+                const createData = await createRes.json();
+                if (!createData.success) throw new Error(createData.status_message || 'Failed to create list');
+                return createData.list_id;
+            } catch (err) {
+                showError('Error with skipped list: ' + err.message);
+                return null;
+            }
+        }
+
+        async function loadExcluded() {
+            if (!skippedListId || !sessionId) return;
+            try {
+                excluded.clear();
+                let page = 1;
+                while (true) {
+                    const itemsRes = await fetch(`https://api.themoviedb.org/3/list/${skippedListId}?api_key=${apiKey}&session_id=${sessionId}&page=${page}`);
+                    const itemsData = await itemsRes.json();
+                    if (itemsData.status_code) throw new Error(itemsData.status_message || 'Failed to fetch excluded');
+                    (itemsData.items || []).forEach(item => excluded.add(item.id));
+                    if (page >= itemsData.total_pages) break;
+                    page++;
+                }
+            } catch (err) {
+                showError('Error loading excluded: ' + err.message);
+            }
+        }
+
+        async function addToExcluded(movieId) {
+            if (!skippedListId || !sessionId) return;
+            try {
+                const res = await fetch(`https://api.themoviedb.org/3/list/${skippedListId}/add_item?api_key=${apiKey}&session_id=${sessionId}`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ media_id: movieId })
+                });
+                const data = await res.json();
+                if (!data.success) throw new Error(data.status_message || 'Failed to add to excluded');
+            } catch (err) {
+                showError('Failed to add to skipped: ' + err.message);
+            }
+        }
+
+        async function removeFromExcluded(movieId) {
+            if (!skippedListId || !sessionId) return;
+            try {
+                const res = await fetch(`https://api.themoviedb.org/3/list/${skippedListId}/remove_item?api_key=${apiKey}&session_id=${sessionId}`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ media_id: movieId })
+                });
+                const data = await res.json();
+                if (!data.success) throw new Error(data.status_message || 'Failed to remove from excluded');
+            } catch (err) {
+                showError('Failed to remove from skipped: ' + err.message);
+            }
+        }
+
+        async function loadFavorites() {
+            if (!accountId || !sessionId) return;
+            try {
+                favorites.clear();
+                let page = 1;
+                while (true) {
+                    const favRes = await fetch(`https://api.themoviedb.org/3/account/${accountId}/favorite/movies?api_key=${apiKey}&session_id=${sessionId}&page=${page}`);
+                    const favData = await favRes.json();
+                    if (favData.status_code) throw new Error(favData.status_message || 'Failed to fetch favorites');
+                    (favData.results || []).forEach(m => favorites.add(m.id));
+                    if (page >= favData.total_pages) break;
+                    page++;
+                }
+                await updateSortedFavorites();
+            } catch (err) {
+                showError('Error loading favorites: ' + err.message);
+            }
+        }
+
+        async function toggleFavoriteTMDB(movieId, add) {
+            if (!accountId || !sessionId) return;
+            try {
+                const res = await fetch(`https://api.themoviedb.org/3/account/${accountId}/favorite?api_key=${apiKey}&session_id=${sessionId}`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ media_type: 'movie', media_id: movieId, favorite: add })
+                });
+                const data = await res.json();
+                if (!data.success) throw new Error(data.status_message || 'Failed to update favorite');
+            } catch (err) {
+                showError('Failed to update favorite: ' + err.message);
+            }
+        }
+
+        async function updateSortedFavorites() {
+            const token = ++favSortToken;
+            const favIds = Array.from(favorites);
+            if (favIds.length === 0) {
+                if (token === favSortToken) sortedFavorites = [];
+                return;
+            }
+            const movies = await Promise.all(favIds.map(getMovieDetails));
+            if (token !== favSortToken) return;
+            sortedFavorites = movies.filter(m => m !== null);
+            sortedFavorites.sort(compareMovies);
+        }
+
+        function toggleFavorite(movieId, buttonElement) {
+            const wasFavorite = favorites.has(movieId);
+            if (wasFavorite) {
+                favorites.delete(movieId);
+                toggleFavoriteTMDB(movieId, false);
+                buttonElement.innerHTML = '♡';
+                buttonElement.style.color = 'white';
+            } else {
+                favorites.add(movieId);
+                toggleFavoriteTMDB(movieId, true);
+                buttonElement.innerHTML = '♥';
+                buttonElement.style.color = 'red';
+            }
+            updateSortedFavorites();
+
+            const rightSide = buttonElement.parentElement;
+            let excludeBtn = rightSide.querySelector('.exclude-btn');
+            if (!wasFavorite) {
+                // now favorite → remove exclude button
+                if (excludeBtn) excludeBtn.remove();
+            } else {
+                // no longer favorite → add exclude button back
+                if (!excludeBtn) {
+                    excludeBtn = document.createElement('button');
+                    excludeBtn.className = 'exclude-btn';
+                    excludeBtn.textContent = 'Seen/Skip';
+                    excludeBtn.onclick = () => excludeMovie(movieId, rightSide.closest('li'));
+                    rightSide.insertBefore(excludeBtn, rightSide.firstChild);
+                }
+            }
+        }
+
+        function excludeMovie(movieId, liElement) {
+            lastSkippedId = movieId;
+            if (favorites.has(movieId)) {
+                favorites.delete(movieId);
+                toggleFavoriteTMDB(movieId, false);
+            }
+            excluded.add(movieId);
+            addToExcluded(movieId);
+            seen.add(movieId);
+            if (liElement) liElement.remove();
+        }
+
+        function resetListPaging() {
+            seen.clear();
+            appPage = 1;
+            currentPage = 1;
+            maxPages = 0;
+            reachedEnd = false;
+            isInRecommendations = false;
+            recsGeneration++;
+        }
+
+        function clearFilters() {
+            selectedGenres = [];
+            localStorage.setItem('selectedGenres', JSON.stringify([]));
+            selectedMoods = [];
+            localStorage.setItem('selectedMoods', JSON.stringify([]));
+            searchQuery = '';
+            localStorage.setItem('searchQuery', '');
+            moodKeywordQuery = '';
+            localStorage.setItem('moodKeywordQuery', '');
+            actorQuery = '';
+            localStorage.setItem('actorQuery', '');
+            minYear = '';
+            localStorage.setItem('minYear', '');
+            maxYear = '';
+            localStorage.setItem('maxYear', '');
+            selectedStreaming = [];
+            localStorage.setItem('selectedStreaming', JSON.stringify([]));
+            localStorage.removeItem('amazonPrimeOnly');
+            updateHeaderTitle();
+            resetListPaging();
+            movieList.innerHTML = '';
+            loadMovies();
+        }
+
+        // ====================== LOAD MOVIES ======================
+        function loadNext() {
+            if (isLoading || reachedEnd || isInRecommendations) return;
+            appPage++;
+            loadMovies(true);
+        }
+
+        function maybeLoadMore() {
+            if (isLoading || reachedEnd || isInRecommendations) return;
+            if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 500) {
+                loadNext();
+            }
+        }
+
+        async function loadMovies(append = false) {
+            if (append && (isLoading || reachedEnd || isInRecommendations)) return;
+
+            const generation = append ? loadGeneration : ++loadGeneration;
+            isLoading = true;
+            errorBox.style.display = 'none';
+
+            if (!append) {
+                reachedEnd = false;
+                movieList.innerHTML = '<p>Loading...</p>';
+            }
+
+            let succeeded = false;
+            try {
+                let favMovies = [];
+                let numFav = 0;
+                if (!searchQuery && currentSort === 'popular') {
+                    const favPool = await filterStreamingMovies(sortedFavorites);
+                    if (generation !== loadGeneration) return;
+                    const favStart = (appPage - 1) * moviesPerPage;
+                    favMovies = favPool.slice(favStart, favStart + moviesPerPage);
+                    numFav = favMovies.length;
+                }
+
+                let numNewNeeded = moviesPerPage - numFav;
+                let newMovies = [];
+
+                if (numNewNeeded > 0) {
+                    let gteStr = minYear ? `&primary_release_date.gte=${minYear}-01-01` : '';
+                    let lteStr = maxYear ? `&primary_release_date.lte=${maxYear}-12-31` : '';
+                    let dateFilter = gteStr + lteStr;
+
+                    let genreParam = (selectedGenres.length > 0 && !searchQuery)
+                        ? `&with_genres=${selectedGenres.join(',')}` : '';
+
+                    let keywordIds = [];
+                    if (moodKeywordQuery && !searchQuery) {
+                        let cleaned = moodKeywordQuery.trim();
+                        if (cleaned && !cleaned.includes(',')) {
+                            cleaned = cleaned.replace(/\s+/g, ',');
+                        }
+                        const keywords = cleaned.split(',').map(k => k.trim()).filter(Boolean);
+                        for (const kw of keywords) {
+                            try {
+                                const res = await fetch(`https://api.themoviedb.org/3/search/keyword?api_key=${apiKey}&query=${encodeURIComponent(kw)}`);
+                                const data = await res.json();
+                                if (data.results && data.results.length > 0) {
+                                    keywordIds.push(data.results[0].id);
+                                }
+                            } catch (e) { /* ignore */ }
+                            if (generation !== loadGeneration) return;
+                        }
+                    }
+                    const allKeywords = [...selectedMoods, ...keywordIds];
+                    let moodParam = allKeywords.length > 0 ? `&with_keywords=${allKeywords.join(',')}` : '';
+
+                    let peopleParam = '';
+                    if (actorQuery && !searchQuery) {
+                        const names = actorQuery.split(',').map(n => n.trim()).filter(Boolean);
+                        const peopleIds = [];
+                        for (const name of names) {
+                            try {
+                                const res = await fetch(`https://api.themoviedb.org/3/search/person?api_key=${apiKey}&query=${encodeURIComponent(name)}`);
+                                const data = await res.json();
+                                if (data.results && data.results.length > 0) {
+                                    const person = data.results.sort((a, b) => b.popularity - a.popularity)[0];
+                                    peopleIds.push(person.id);
+                                }
+                            } catch (e) { /* ignore */ }
+                            if (generation !== loadGeneration) return;
+                        }
+                        if (peopleIds.length > 0) {
+                            peopleParam = `&with_people=${peopleIds.join(',')}`;
+                        }
+                    }
+
+                    let baseUrl;
+                    if (searchQuery) {
+                        baseUrl = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${encodeURIComponent(searchQuery)}&with_original_language=en&region=US`;
+                        if (minYear && minYear === maxYear) {
+                            baseUrl += `&primary_release_year=${minYear}`;
+                        }
+                    } else {
+                        const providerIds = selectedProviderIds();
+                        const streamingParam = providerIds.length
+                            ? `&with_watch_providers=${encodeURIComponent(providerIds.join('|'))}&watch_region=${WATCH_REGION}&with_watch_monetization_types=${encodeURIComponent('flatrate|ads')}`
+                            : '';
+                        baseUrl = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}${dateFilter}${genreParam}${moodParam}${peopleParam}${streamingParam}${sortQueryParams()}&with_original_language=en&region=US`;
+                    }
+
+                    let attempts = 0;
+                    const maxAttempts = 40;
+
+                    while (newMovies.length < numNewNeeded && attempts < maxAttempts && (maxPages === 0 || currentPage <= maxPages)) {
+                        attempts++;
+                        const response = await fetch(`${baseUrl}&page=${currentPage}`);
+                        if (generation !== loadGeneration) return;
+                        const data = await response.json();
+                        if (data.status_code) throw new Error(data.status_message || 'TMDB Error');
+
+                        if (data.total_pages > maxPages) maxPages = data.total_pages;
+
+                        if (!data.results || data.results.length === 0) {
+                            currentPage++;
+                            continue;
+                        }
+
+                        let potential = data.results.filter(m => !seen.has(m.id) && !excluded.has(m.id));
+                        if (searchQuery && selectedStreaming.length) {
+                            potential = await filterStreamingMovies(potential);
+                            if (generation !== loadGeneration) return;
+                        }
+                        newMovies = newMovies.concat(potential);
+                        currentPage++;
+                    }
+
+                    newMovies = newMovies.slice(0, numNewNeeded);
+
+                    if (searchQuery || currentSort !== 'popular') {
+                        newMovies.sort(compareMovies);
+                    } else {
+                        newMovies.sort((a, b) => {
+                            const aHasVote = a.vote_average > 0 ? 1 : 0;
+                            const bHasVote = b.vote_average > 0 ? 1 : 0;
+                            if (aHasVote !== bHasVote) return bHasVote - aHasVote;
+                            const aHasPoster = a.poster_path ? 1 : 0;
+                            const bHasPoster = b.poster_path ? 1 : 0;
+                            return bHasPoster - aHasPoster;
+                        });
+                    }
+                }
+
+                if (generation !== loadGeneration) return;
+
+                if (maxPages > 0 && currentPage > maxPages && newMovies.length < numNewNeeded) {
+                    reachedEnd = true;
+                }
+
+                const allMovies = [...favMovies, ...newMovies];
+                allMovies.forEach(m => seen.add(m.id));
+
+                if (!append) {
+                    if (allMovies.length === 0) {
+                        movieList.innerHTML = '<p>No movies found matching your filters.</p>';
+                        reachedEnd = true;
+                        return;
+                    }
+                    movieList.innerHTML = '<ul id="movie-ul"></ul>';
+                }
+
+                const ul = document.getElementById('movie-ul');
+                if (ul && allMovies.length > 0) {
+                    const cardsHTML = allMovies.map(createMovieCardHTML).join('');
+                    ul.insertAdjacentHTML('beforeend', cardsHTML);
+                    setupOverviews();
+                    fillWatchBadges(ul);
+                }
+
+                if (allMovies.length === 0 && append) {
+                    reachedEnd = true;
+                }
+                succeeded = true;
+            } catch (err) {
+                if (generation !== loadGeneration) return;
+                showError(`Network error: ${err.message}`);
+                if (!append) movieList.innerHTML = '';
+            } finally {
+                if (generation === loadGeneration) {
+                    isLoading = false;
+                    if (succeeded && !reachedEnd && !isInRecommendations) {
+                        requestAnimationFrame(maybeLoadMore);
+                    }
+                }
+            }
+        }
+
+        function setupOverviews() {
+            document.querySelectorAll('.overview').forEach(ov => {
+                if (ov.dataset.setup) return;
+                ov.dataset.setup = '1';
+                ov.style.maxHeight = '154px';
+                ov.style.overflow = 'hidden';
+
+                const checkOverflow = () => {
+                    const isOverflow = ov.scrollHeight > ov.clientHeight + 2;
+                    let ellipsis = ov.querySelector('.ellipsis');
+                    if (isOverflow && !ellipsis) {
+                        ellipsis = document.createElement('span');
+                        ellipsis.className = 'ellipsis';
+                        ellipsis.textContent = '...';
+                        ellipsis.style.cssText = 'position:absolute;bottom:0;right:0;background:#121212;color:#e0e0e0;padding-left:4px;';
+                        ov.appendChild(ellipsis);
+                    } else if (!isOverflow && ellipsis) {
+                        ellipsis.remove();
+                    }
+                };
+                checkOverflow();
+
+                ov.addEventListener('click', () => {
+                    if (ov.style.maxHeight !== 'none') {
+                        ov.style.maxHeight = 'none';
+                        ov.style.overflow = 'visible';
+                        const el = ov.querySelector('.ellipsis');
+                        if (el) el.remove();
+                    } else {
+                        ov.style.maxHeight = '154px';
+                        ov.style.overflow = 'hidden';
+                        checkOverflow();
+                    }
+                });
+            });
+        }
+
+        // ====================== UNDO ======================
+        undoBtn.onclick = async function () {
+            if (!lastSkippedId) return;
+            excluded.delete(lastSkippedId);
+            removeFromExcluded(lastSkippedId);
+            seen.delete(lastSkippedId);
+
+            const movie = await getMovieDetails(lastSkippedId);
+            if (movie) {
+                const html = createMovieCardHTML(movie);
+                let ul = document.getElementById('movie-ul');
+                if (!ul) {
+                    movieList.innerHTML = '<ul id="movie-ul"></ul>';
+                    ul = document.getElementById('movie-ul');
+                }
+                ul.insertAdjacentHTML('afterbegin', html);
+                setupOverviews();
+                fillWatchBadges(ul);
+            }
+            lastSkippedId = null;
+        };
+
+        // ====================== RECOMMENDATIONS (TMDB similar + recommendations) ======================
+        function syncCardState(root) {
+            root.querySelectorAll('li[data-movie-id]').forEach(li => {
+                const id = parseInt(li.dataset.movieId, 10);
+                if (excluded.has(id)) {
+                    li.remove();
+                    return;
+                }
+                const isFavorite = favorites.has(id);
+                const favBtn = li.querySelector('.favorite-btn');
+                if (favBtn) {
+                    favBtn.innerHTML = isFavorite ? '♥' : '♡';
+                    favBtn.style.color = isFavorite ? 'red' : 'white';
+                }
+                const rightSide = li.querySelector('.right-side');
+                if (!rightSide) return;
+                let excludeBtn = rightSide.querySelector('.exclude-btn');
+                if (isFavorite && excludeBtn) excludeBtn.remove();
+                if (!isFavorite && !excludeBtn) {
+                    excludeBtn = document.createElement('button');
+                    excludeBtn.className = 'exclude-btn';
+                    excludeBtn.textContent = 'Seen/Skip';
+                    excludeBtn.onclick = () => excludeMovie(id, li);
+                    rightSide.insertBefore(excludeBtn, rightSide.firstChild);
+                }
+            });
+        }
+
+        function backToMainList() {
+            recsGeneration++;
+            movieList.innerHTML = originalListHTML || '';
+            syncCardState(movieList);
+            movieList.querySelectorAll('.watch-on').forEach(slot => {
+                const cached = watchProviderCache.get(String(slot.dataset.movieId));
+                if (cached) renderWatchBadges(slot, cached);
+                else delete slot.dataset.loaded;
+            });
+            setupOverviews();
+            fillWatchBadges(movieList);
+            isInRecommendations = false;
+            window.scrollTo({ top: originalScrollPos, behavior: 'instant' });
+            const selectedLi = movieList.querySelector(`[data-movie-id="${selectedMovieId}"]`);
+            if (selectedLi) selectedLi.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            requestAnimationFrame(maybeLoadMore);
+        }
+
+        async function loadRecommendations(movieTitle, movieId) {
+            const generation = ++recsGeneration;
+            if (!isInRecommendations) {
+                originalListHTML = movieList.innerHTML;
+                originalScrollPos = window.scrollY;
+                selectedMovieId = movieId;
+            }
+            movieList.innerHTML = '<p>Loading recommendations...</p>';
+            isInRecommendations = true;
+
+            try {
+                // Fetch both similar and recommendations in parallel for better results
+                const [similarRes, recsRes] = await Promise.all([
+                    fetch(`https://api.themoviedb.org/3/movie/${movieId}/similar?api_key=${apiKey}&language=en-US&page=1`),
+                    fetch(`https://api.themoviedb.org/3/movie/${movieId}/recommendations?api_key=${apiKey}&language=en-US&page=1`)
+                ]);
+                if (generation !== recsGeneration) return;
+
+                const similarData = await similarRes.json();
+                const recsData = await recsRes.json();
+
+                let combined = [];
+                const seenIds = new Set();
+
+                // Prefer recommendations first, then similar
+                const sources = [
+                    ...(recsData.results || []),
+                    ...(similarData.results || [])
+                ];
+
+                for (const movie of sources) {
+                    if (!movie || !movie.id) continue;
+                    if (seenIds.has(movie.id) || excluded.has(movie.id) || movie.id == movieId) continue;
+                    seenIds.add(movie.id);
+                    combined.push(movie);
+                }
+
+                combined = await filterStreamingMovies(combined);
+                if (generation !== recsGeneration) return;
+                combined = combined.slice(0, 20);
+
+                let html = `<h2>Similar to ${escapeHtml(movieTitle)}</h2>
+                            <button onclick="backToMainList()" style="margin-bottom:16px;">← Back to List</button>`;
+
+                if (combined.length > 0) {
+                    html += '<ul id="movie-ul">';
+                    html += combined.map(createMovieCardHTML).join('');
+                    html += '</ul>';
+                } else {
+                    html += '<p>No recommendations found for this movie.</p>';
+                }
+
+                if (generation !== recsGeneration) return;
+                movieList.innerHTML = html;
+                setupOverviews();
+                fillWatchBadges(movieList);
+            } catch (err) {
+                if (generation !== recsGeneration) return;
+                showError('Failed to load recommendations: ' + err.message);
+                movieList.innerHTML = `<p>Failed to load recommendations.</p>
+                                       <button onclick="backToMainList()">← Back to List</button>`;
+            }
+        }
+
+        // Single delegated click handler for titles (recommendations) and posters (trailers)
+        movieList.addEventListener('click', (event) => {
+            // Title click → similar movies
+            if (event.target.tagName === 'H3') {
+                const titleText = event.target.textContent;
+                const movieTitle = titleText.split(' (')[0];
+                const li = event.target.closest('li');
+                if (!li) return;
+                loadRecommendations(movieTitle, li.dataset.movieId);
+                return;
+            }
+
+            // Poster click → trailer
+            const poster = event.target.closest('.poster');
+            if (poster && poster.dataset.movieId) {
+                openTrailerModal(poster.dataset.movieId);
+            }
+        });
+
+        // ====================== INIT ======================
+        (async () => {
+            apiKey = resolveApiKey();
+            if (!apiKey) {
+                movieList.innerHTML = '<p>Enter a TMDB API key to load movies.</p>';
+                await askForApiKey();
+            }
+
+            document.getElementById('clearBtn').onclick = clearFilters;
+            filtersBtn.onclick = showFilters;
+            filtersModal.querySelector('#applyFilters').onclick = () => closeFiltersModal(true);
+            filtersModal.querySelector('#cancelFilters').onclick = () => closeFiltersModal(false);
+
+            filtersModal.addEventListener('click', (e) => {
+                if (e.target === filtersModal) closeFiltersModal(false);
+            });
+            trailerModal.addEventListener('click', (e) => {
+                if (e.target === trailerModal) closeModal();
+            });
+            loginModal.addEventListener('click', (e) => {
+                if (e.target === loginModal) closeLoginModal();
+            });
+            document.getElementById('loginCancelBtn').onclick = closeLoginModal;
+
+            loginForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const username = tmdbUsername.value.trim();
+                const password = tmdbPassword.value;
+                if (!username || !password) {
+                    loginError.textContent = 'Enter your TMDB username and password.';
+                    return;
+                }
+
+                loginError.textContent = '';
+                loginSubmitBtn.disabled = true;
+                loginSubmitBtn.textContent = 'Signing in...';
+                try {
+                    await loginWithPassword(username, password);
+                    closeLoginModal();
+                    resetListPaging();
+                    await loadMovies();
+                } catch (err) {
+                    loginError.textContent = err.message || 'Login failed.';
+                    loginSubmitBtn.disabled = false;
+                    loginSubmitBtn.textContent = 'Sign in';
+                    tmdbPassword.focus();
+                }
+            });
+
+            // Escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    if (trailerModal.style.display === 'flex') closeModal();
+                    if (filtersModal.style.display === 'flex') closeFiltersModal(false);
+                    if (loginModal.style.display === 'flex') closeLoginModal();
+                }
+            });
+
+            // Auth callback handling (older redirect links)
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('request_token') && urlParams.has('approved') && urlParams.get('approved') === 'true') {
+                try {
+                    const sessionRes = await fetch(`https://api.themoviedb.org/3/authentication/session/new?api_key=${apiKey}`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ request_token: urlParams.get('request_token') })
+                    });
+                    const sessionData = await sessionRes.json();
+                    if (!sessionData.success || !sessionData.session_id) throw new Error(sessionData.status_message || 'Failed to create session');
+                    await finishLogin(sessionData.session_id);
+                    history.replaceState(null, '', window.location.pathname);
+                } catch (err) {
+                    showError('Login failed: ' + err.message);
+                    clearLoginState();
+                    authStatus.textContent = '';
+                }
+            } else if (urlParams.has('denied')) {
+                showError('Login denied by user.');
+                history.replaceState(null, '', window.location.pathname);
+            }
+
+            if (sessionId && accountId) {
+                try {
+                    const accountRes = await fetch(`https://api.themoviedb.org/3/account?api_key=${apiKey}&session_id=${sessionId}`);
+                    const accountData = await accountRes.json();
+                    if (accountData.status_code || !accountData.id) throw new Error(accountData.status_message || 'Invalid session');
+
+                    authStatus.textContent = 'Logged in – favorites & skipped list synced.';
+                    loginBtn.style.display = 'none';
+                    skippedListId = await getOrCreateSkippedList();
+                    await loadExcluded();
+                    await loadFavorites();
+                } catch (err) {
+                    showError('Session invalid: ' + err.message);
+                    clearLoginState();
+                    authStatus.textContent = '';
+                }
+            } else {
+                authStatus.textContent = '';
+                loginBtn.style.display = 'block';
+            }
+
+            // Always load movies (login is optional)
+            sortSelect.value = currentSort;
+            updateHeaderTitle();
+            sortSelect.addEventListener('change', async () => {
+                currentSort = SORT_OPTIONS[sortSelect.value] ? sortSelect.value : 'popular';
+                localStorage.setItem('movieSort', currentSort);
+                updateHeaderTitle();
+                resetListPaging();
+                if (sortedFavorites.length) sortedFavorites.sort(compareMovies);
+                movieList.innerHTML = '';
+                await loadMovies();
+            });
+            await loadMovies();
+
+            loginBtn.onclick = openLoginModal;
+
+            // Infinite scroll + back-to-top
+            window.addEventListener('scroll', () => {
+                maybeLoadMore();
+                backToTop.style.display = window.scrollY > 300 ? 'block' : 'none';
+            });
+
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        })();
+    </script>
+</body>
+</html>
