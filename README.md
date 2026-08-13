@@ -44,11 +44,30 @@ If `config.js` is missing, the app asks for the key once and saves it in this br
 
 **Clear** resets filters. It does not change the sort.
 
-## Host it (Cloudflare later)
+## Host it on Cloudflare Pages
 
-Deploy the folder as a static site. Do **not** upload `config.js` if the site will be public.
+The GitHub repo is already set up for this. Cloudflare will pull from GitHub, so `config.js` (your API key) is never uploaded.
 
-On first visit, paste your TMDB key in the box. It stays in that browser. On an iPhone, open the site in Safari and use **Share → Add to Home Screen**.
+1. Open [Workers & Pages](https://dash.cloudflare.com/?to=/:account/workers-and-pages) and sign in (create a free account if you need one).
+2. **Create** → **Pages** → **Import an existing Git repository** (or **Connect to Git**).
+3. Authorize GitHub if asked, then choose **`bigjokker/movie-app`**.
+4. Use these settings:
+
+   | Setting | Value |
+   | --- | --- |
+   | Project name | `movie-app` (or any name you like) |
+   | Production branch | `master` |
+   | Framework preset | None |
+   | Build command | `exit 0` |
+   | Build output directory | `/` |
+
+5. Click **Save and Deploy**.
+
+When it finishes you get a URL like `https://movie-app.pages.dev`. Open that, paste your TMDB API key once, and the movies load. That key stays in that browser only.
+
+On iPhone: open the URL in **Safari** → **Share** → **Add to Home Screen**.
+
+Later pushes to `master` update the live site automatically.
 
 ## Privacy
 
