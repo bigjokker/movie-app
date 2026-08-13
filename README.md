@@ -58,7 +58,7 @@ The GitHub repo is already set up for this. Cloudflare will pull from GitHub, so
    | Setting | Value |
    | --- | --- |
    | Project name | `movie-app` |
-   | Production branch | `master` |
+   | Production branch | `main` |
    | Build command | leave empty |
    | Deploy command | `npx wrangler deploy` |
 
@@ -66,7 +66,7 @@ The GitHub repo is already set up for this. Cloudflare will pull from GitHub, so
 
    | Setting | Value |
    | --- | --- |
-   | Production branch | `master` |
+   | Production branch | `main` |
    | Framework preset | None |
    | Build command | `exit 0` |
    | Build output directory | `/` |
@@ -77,7 +77,7 @@ When it finishes you get a URL like `https://movie-app.pages.dev`. Open that, pa
 
 On iPhone: open the URL in **Safari** → **Share** → **Add to Home Screen**.
 
-Later pushes to `master` update the live site automatically.
+Later pushes to `main` update the live site automatically.
 
 ## Privacy
 
