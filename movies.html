@@ -1697,6 +1697,10 @@
             });
             await loadMovies();
 
+            if (new URLSearchParams(location.search).get('shot') === 'filters') {
+                showFilters();
+            }
+
             loginBtn.onclick = openLoginModal;
 
             // Infinite scroll + back-to-top

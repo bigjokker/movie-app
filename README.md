@@ -4,6 +4,16 @@ A personal movie browser. Scroll popular titles, filter by genre, mood, actor, y
 
 This repo does **not** include a TMDB API key.
 
+## Screenshots
+
+The main list, with sort, trailers on the poster, and where-to-watch labels:
+
+![Movie list](screenshots/list.png)
+
+Filters for genre, mood, search, year, and streaming services:
+
+![Filters](screenshots/filters.png)
+
 ## Get a TMDB API key
 
 1. Create a free account at [themoviedb.org](https://www.themoviedb.org/signup).
